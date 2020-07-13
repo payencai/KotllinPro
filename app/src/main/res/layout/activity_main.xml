@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_above="@id/ll_bottom"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+    <View
+        android:layout_above="@id/ll_bottom"
+        android:background="#f0f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></View>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/ll_bottom"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:id="@+id/ll_tab_home"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            tools:targetApi="lollipop">
+            <ImageView
+                android:id="@+id/iv_tab_home"
+                android:layout_marginTop="3dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_red_home"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/tv_tab_home"
+                android:textColor="@color/Red_login"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:text="首页"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:id="@+id/ll_tab_prefered"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            tools:targetApi="lollipop">
+
+            <ImageView
+                android:id="@+id/iv_tab_you"
+                android:layout_marginTop="3dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_grey_prefered"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:textColor="@color/Grey_4f"
+                android:id="@+id/tv_tab_you"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:text="优选"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+
+            android:id="@+id/ll_tab_car"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            tools:targetApi="lollipop">
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="32dp"
+                android:layout_height="24dp">
+
+                <ImageView
+                    android:id="@+id/iv_tab_car"
+
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_grey_prefered" />
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:text="1"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:background="@drawable/bg_circle"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp" />
+            </RelativeLayout>
+            <TextView
+                android:textColor="@color/Grey_4f"
+                android:id="@+id/tv_tab_car"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:text="购物车"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_tab_mine"
+            android:padding="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            tools:targetApi="lollipop">
+            <ImageView
+                android:id="@+id/iv_tab_mine"
+                android:layout_marginTop="3dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/ic_grey_mine"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:textColor="@color/Grey_4f"
+                android:id="@+id/tv_tab_mine"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:text="我的"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

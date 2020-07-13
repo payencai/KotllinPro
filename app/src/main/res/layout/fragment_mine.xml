@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/Grey_f5"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.MineFragment">
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="我的"
+        android:background="@color/Black_26"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </TextView>
+
+    <com.love.kotllinpro.widget.MyScrollView
+        android:layout_width="match_parent"
+        android:fadingEdge="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp">
+                <LinearLayout
+                    android:background="@mipmap/ic_mine_oval_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="87dp">
+                        <com.love.kotllinpro.widget.CircleImageView
+                            android:layout_width="54dp"
+                            android:src="@mipmap/ic_beaty"
+                            android:layout_marginLeft="13dp"
+                            android:layout_height="54dp" >
+
+                        </com.love.kotllinpro.widget.CircleImageView>
+                        <RelativeLayout
+                            android:paddingLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_centerVertical="true"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textStyle="normal"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        android:text="小小云朵"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                    </TextView>
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp"
+                                    android:text="喜粉邀请号: 54135208"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:background="@drawable/bg_mine_plus"
+                                android:gravity="center"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="28dp">
+                                <ImageView
+                                    android:src="@mipmap/ic_plus_logo"
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp">
+
+                                </ImageView>
+                                <TextView
+                                    android:layout_marginLeft="5dp"
+                                    android:textColor="@color/Yellow_plus"
+                                    android:textSize="13sp"
+                                    android:text="升级会员"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginLeft="4dp"
+                                    android:src="@mipmap/ic_row_right"
+                                    android:layout_width="5dp"
+                                    android:layout_height="9dp">
+
+                                </ImageView>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/bg_mine_balance"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="#333333"
+                            android:text="0.00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="11sp"
+                                android:textColor="#333"
+                                android:text="累计收益"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:src="@mipmap/ic_black_right"
+                                android:layout_width="5dp"
+                                android:layout_height="9dp">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+
+                        android:background="#333333"
+                        android:layout_width="1dp"
+                        android:layout_height="43dp"></View>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="#333333"
+                            android:text="0.00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="11sp"
+                                android:textColor="#333"
+                                android:text="账户金额"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:src="@mipmap/ic_black_right"
+                                android:layout_width="5dp"
+                                android:layout_height="9dp">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+
+                        android:background="#333333"
+                        android:layout_width="1dp"
+                        android:layout_height="43dp"></View>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="#333333"
+                            android:text="0.00"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="11sp"
+                                android:textColor="#333"
+                                android:text="我的红包"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:src="@mipmap/ic_black_right"
+                                android:layout_width="5dp"
+                                android:layout_height="9dp">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+
+                        android:background="#333333"
+                        android:layout_width="1dp"
+                        android:layout_height="43dp"></View>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="#333333"
+                            android:text="0张"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="11sp"
+                                android:textColor="#333"
+                                android:text="优惠券"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <ImageView
+                                android:layout_marginLeft="5dp"
+                                android:src="@mipmap/ic_black_right"
+                                android:layout_width="5dp"
+                                android:layout_height="9dp">
+
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_margin="12dp"
+                android:background="@drawable/bg_mine_tuanzhang"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/ic_gift"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp">
+
+                    </ImageView>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="15sp"
+                        android:textColor="#333"
+                        android:text="团长礼包专区"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_marginLeft="5dp"
+                        android:textSize="13sp"
+                        android:textColor="#333"
+                        android:text="享受更多权益"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <LinearLayout
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="7dp"
+                        android:paddingLeft="7dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_mine_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:layout_marginLeft="5dp"
+                            android:textSize="13sp"
+                            android:textColor="#FBE7B2"
+                            android:text="进入专区"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                        <ImageView
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="4dp"
+                            android:src="@mipmap/ic_row_right"
+                            android:layout_width="5dp"
+                            android:layout_height="9dp">
+
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/shape_home_white4"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/shape_home_white4"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/shape_home_white4"
+                android:layout_width="match_parent"
+                android:layout_height="255dp">
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.love.kotllinpro.widget.MyScrollView>
+</LinearLayout>
